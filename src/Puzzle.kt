@@ -8,7 +8,8 @@ import java.io.File
 class Puzzle(rows: Int, cols: Int) {
 
     var puzzle: Array<CharArray> = arrayOf()
-    var keys: Array<String> = arrayOf()
+    var allKeys: Array<String> = arrayOf()
+    var lookFor: Array<String> = arrayOf()
 
     init {
 
@@ -18,9 +19,9 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle += puzzleRow
         }
 
-        keys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
+        allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
 
-        for (x in keys) {
+        for (x in allKeys) {
             addKeys(x, (0..2).random(), (0..1).random() == 1)
         }
 
@@ -65,6 +66,7 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle[i + r][c] = key[i]
         }
 
+        lookFor += key
     }
 
     private fun fillHorizontallyWithKey(key: String) {
@@ -82,11 +84,13 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle[r][c + i] = key[i]
         }
 
+        lookFor += key
+
     }
 
     private fun fillDiagonallyWithKey(key: String) {
 
-        var r = (0..puzzle.size - key.length).random()
+        val r = (0..puzzle.size - key.length).random()
         val c = (0..puzzle[0].size - key.length).random()
 
         for (i in key.indices) {
@@ -99,6 +103,7 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle[r + i][c + i] = key[i]
         }
 
+        lookFor += key
 
     }
 
@@ -110,7 +115,7 @@ class Puzzle(rows: Int, cols: Int) {
         for (i in puzzle.indices) {
             for (j in puzzle[i].indices) {
                 if (isEmptyTile(i, j)) {
-                   puzzle[i][j] = ('a'..'z').random()
+                    //puzzle[i][j] = ('a'..'z').random()
                 }
             }
         }
@@ -138,6 +143,15 @@ class Puzzle(rows: Int, cols: Int) {
             }
             stringValue.append('\n')
         }
+
+        for (x in allKeys) {
+            if (lookFor.contains(x) || lookFor.contains(x.reversed())) {
+                stringValue.append("${x}, ")
+            }
+        }
+
+        stringValue.append("\n")
+
         return stringValue.toString()
 
     }

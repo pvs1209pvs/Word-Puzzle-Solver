@@ -7,7 +7,14 @@ fun main(){
 
     println(puzzle)
 
-    verticalFinder(puzzle)
+    val aPS = PuzzleSolver(puzzle, 0)
+    val bPS = PuzzleSolver(puzzle, 1)
+
+    aPS.run()
+    bPS.run()
+
+
+
 
 //    println(".nohtyp...".contains("python".reversed()))
 

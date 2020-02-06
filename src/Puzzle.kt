@@ -1,8 +1,7 @@
 import java.io.File
 
 /*
-    00  01  02  03  04  05
-    10  11  12  13  14  15
+    TODO: key added return true upon successful addition. if the function returns true add that key to the lookfor table.
  */
 
 class Puzzle(rows: Int, cols: Int) {

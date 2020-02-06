@@ -15,7 +15,6 @@
       <change afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Sink-Finder/src/demo/SinkFinder.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Puzzle.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/answers" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Anagram.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/CountingSort1.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Main.kt" afterDir="false" />
@@ -24,14 +23,9 @@
       <change afterPath="$PROJECT_DIR$/../../KotlinTut/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../KotlinTut/src/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/META-INF/Word-Puzzle.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/META-INF/Word-Puzzle.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle$readKeys$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle$readKeys$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/PuzzleSolverKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Puzzle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Puzzle.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PuzzleSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PuzzleSolver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/answers" beforeDir="false" afterPath="$PROJECT_DIR$/src/answers" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="257">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -57,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2696">
+            <state relative-caret-position="-2865">
               <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
@@ -66,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PuzzleSolver.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -75,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/answers">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="303">
+              <caret line="999" column="4" selection-start-line="999" selection-start-column="4" selection-end-line="999" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -102,9 +96,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/answers" />
         <option value="$PROJECT_DIR$/src/Puzzle.kt" />
         <option value="$PROJECT_DIR$/src/PuzzleSolver.kt" />
+        <option value="$PROJECT_DIR$/src/answers" />
         <option value="$PROJECT_DIR$/src/Main.kt" />
       </list>
     </option>
@@ -117,8 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="26" />
     <option name="width" value="960" />
     <option name="height" value="1009" />
@@ -130,11 +123,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -199,12 +188,13 @@
       <workItem from="1580847479749" duration="1130000" />
       <workItem from="1580852124133" duration="37000" />
       <workItem from="1580913524604" duration="55000" />
-      <workItem from="1581004746176" duration="1251000" />
+      <workItem from="1581004746176" duration="1541000" />
+      <workItem from="1581016665546" duration="1351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10550000" />
+    <option name="totallyTimeSpent" value="12191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -228,7 +218,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5276836" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5762712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -236,7 +226,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3299435" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.8158192" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3299435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -255,31 +245,31 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/answers">
+    <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="-2865">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
+    <entry file="file://$PROJECT_DIR$/src/answers">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2696">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="303">
+          <caret line="999" column="4" selection-start-line="999" selection-start-column="4" selection-end-line="999" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PuzzleSolver.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state relative-caret-position="180">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="257">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>

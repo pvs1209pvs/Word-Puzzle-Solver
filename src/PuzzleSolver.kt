@@ -44,8 +44,8 @@ class PuzzleSolver(var targetPuzzle: Puzzle, val i:Int) : Thread() {
 
 
     override fun run() {
-        if(i==0) println(horizontalFinder())
-        else println(verticalFinder())
+        if(i==0) (horizontalFinder())
+        else (verticalFinder())
     }
 
 

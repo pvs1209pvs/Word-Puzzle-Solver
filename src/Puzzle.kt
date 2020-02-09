@@ -1,14 +1,10 @@
 import java.io.File
 
-/*
-    TODO: key added return true upon successful addition. if the function returns true add that key to the lookfor table.
- */
 
 class Puzzle(rows: Int, cols: Int) {
 
     var puzzle: Array<CharArray> = arrayOf()
     var allKeys: Array<String> = arrayOf()
-    var lookFor: Array<String> = arrayOf()
 
     init {
 
@@ -21,7 +17,7 @@ class Puzzle(rows: Int, cols: Int) {
         allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
 
 
-        fillEmptySpots()
+        //fillEmptySpots()
 
     } // init
 
@@ -165,6 +161,7 @@ class Puzzle(rows: Int, cols: Int) {
             stringValue.append('\n')
         }
 
+        stringValue.append("\nLook for:\t")
         allKeys.forEach { stringValue.append("$it ") }
 
         stringValue.append("\n")

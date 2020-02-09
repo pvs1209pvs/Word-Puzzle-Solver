@@ -2,7 +2,7 @@ import java.util.concurrent.TimeUnit
 
 fun main(){
 
-    val puzzle = Puzzle(150,150)
+    val puzzle = Puzzle(15,15)
 
     println(puzzle)
 

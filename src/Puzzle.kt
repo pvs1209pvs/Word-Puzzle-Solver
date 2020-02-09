@@ -31,7 +31,7 @@ class Puzzle(rows: Int, cols: Int) {
     /*
     ornt: 0 is vertical 1 is horizontal 2 is diagonally
      */
-    fun addKeys(key: String, ornt: Int, reversed: Boolean) {
+    private fun addKeys(key: String, ornt: Int, reversed: Boolean) {
 
         if (puzzle[0].size < key.length) {
             println("key length ${key.length} > column length ${puzzle[0].size}")
@@ -114,7 +114,7 @@ class Puzzle(rows: Int, cols: Int) {
         for (i in puzzle.indices) {
             for (j in puzzle[i].indices) {
                 if (isEmptyTile(i, j)) {
-                    //puzzle[i][j] = ('a'..'z').random()
+                    puzzle[i][j] = ('a'..'z').random()
                 }
             }
         }

@@ -1,6 +1,6 @@
 class PuzzleSolver(var targetPuzzle: Puzzle, val i:Int) : Thread() {
 
-    fun horizontalFinder(): MutableSet<String> {
+    private fun horizontalFinder(): MutableSet<String> {
 
         val set: MutableSet<String> = mutableSetOf()
 
@@ -21,7 +21,7 @@ class PuzzleSolver(var targetPuzzle: Puzzle, val i:Int) : Thread() {
 
     }
 
-    fun verticalFinder(): MutableSet<String> {
+    private fun verticalFinder(): MutableSet<String> {
 
         val set: MutableSet<String> = mutableSetOf()
 

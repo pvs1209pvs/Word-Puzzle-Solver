@@ -20,44 +20,47 @@ class Puzzle(rows: Int, cols: Int) {
 
         allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
 
-        for (x in allKeys) {
-            addKeys(x, (0..2).random(), (0..1).random() == 1)
-        }
 
-        fillEmpty()
+        fillEmptySpots()
 
     } // init
 
     /*
     ornt: 0 is vertical 1 is horizontal 2 is diagonally
      */
-    private fun addKeys(key: String, ornt: Int, reversed: Boolean) {
+    private fun addKeys(key: String, ornt: Int, reversed: Boolean): String? {
 
         if (puzzle[0].size < key.length) {
             println("key length ${key.length} > column length ${puzzle[0].size}")
-            return
+            return null
         }
 
         if (ornt == 0) {
-            fillVerticallyWithKey(if (reversed) key.reversed() else key)
+            return fillVerticallyWithKey(if (reversed) key.reversed() else key)
         } else if (ornt == 1) {
-            fillHorizontallyWithKey(if (reversed) key.reversed() else key)
+            return fillHorizontallyWithKey(if (reversed) key.reversed() else key)
         } else if (ornt == 2) {
-            fillDiagonallyWithKey(if (reversed) key.reversed() else key)
+            return fillDiagonallyWithKey(if (reversed) key.reversed() else key)
         }
+
+        return null
 
 
     } // addKeys
 
 
-    private fun fillVerticallyWithKey(key: String) {
+    /*
+    Adds words vertically into the puzzle.
+    Returns the words if it could be successfully added else null.
+     */
+    private fun fillVerticallyWithKey(key: String): String? {
 
         val r = (0..puzzle.size - key.length).random()
         val c = (puzzle[0].indices).random()
 
         for (i in key.indices) {
             if (!isEmptyTile(i + r, c)) {
-                return
+                return null
             }
         }
 
@@ -65,17 +68,21 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle[i + r][c] = key[i]
         }
 
-        lookFor += key
+        return key
     }
 
-    private fun fillHorizontallyWithKey(key: String) {
+    /*
+   Adds words horizontally into the puzzle.
+   Returns the words if it could be successfully added else null.
+    */
+    private fun fillHorizontallyWithKey(key: String): String? {
 
         val r = (puzzle.indices).random()
         val c = (0..puzzle[0].size - key.length).random()
 
         for (i in key.indices) {
             if (!isEmptyTile(r, c + i)) {
-                return
+                return null
             }
         }
 
@@ -83,18 +90,23 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle[r][c + i] = key[i]
         }
 
-        lookFor += key
+
+        return key
 
     }
 
-    private fun fillDiagonallyWithKey(key: String) {
+    /*
+   Adds words diagonally into the puzzle.
+   Returns the words if it could be successfully added else null.
+    */
+    private fun fillDiagonallyWithKey(key: String): String? {
 
         val r = (0..puzzle.size - key.length).random()
         val c = (0..puzzle[0].size - key.length).random()
 
         for (i in key.indices) {
             if (!isEmptyTile(r + i, c + i)) {
-                return
+                return null
             }
         }
 
@@ -102,15 +114,37 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle[r + i][c + i] = key[i]
         }
 
-        lookFor += key
+        return key
 
     }
 
+
+    private fun readKeys(fileName: String): Array<String> {
+
+        var keys: Array<String> = arrayOf()
+
+        File(fileName).forEachLine {
+            val key = (addKeys(it, (0..2).random(), (0..1).random() == 1))
+            if (key != null) keys += it
+        }
+
+        return keys
+
+    }
+
+    /*
+    Checks if there is an empty spot at the provided index.
+    Returns true if the spot is empty else false.
+     */
     private fun isEmptyTile(r: Int, c: Int): Boolean {
         return puzzle[r][c] == '.'
     }
 
-    private fun fillEmpty() {
+
+    /*
+    Fills empty spots will random english alphabets.
+     */
+    private fun fillEmptySpots() {
         for (i in puzzle.indices) {
             for (j in puzzle[i].indices) {
                 if (isEmptyTile(i, j)) {
@@ -118,18 +152,6 @@ class Puzzle(rows: Int, cols: Int) {
                 }
             }
         }
-    }
-
-    fun readKeys(fileName: String): Array<String> {
-
-        var ans: Array<String> = arrayOf()
-
-        File(fileName).forEachLine {
-            ans += it
-        }
-
-        return ans
-
     }
 
     override fun toString(): String {
@@ -143,11 +165,7 @@ class Puzzle(rows: Int, cols: Int) {
             stringValue.append('\n')
         }
 
-        for (x in allKeys) {
-            if (lookFor.contains(x) || lookFor.contains(x.reversed())) {
-                stringValue.append("${x}, ")
-            }
-        }
+        allKeys.forEach { stringValue.append("$it ") }
 
         stringValue.append("\n")
 

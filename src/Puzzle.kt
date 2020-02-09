@@ -17,7 +17,7 @@ class Puzzle(rows: Int, cols: Int) {
         allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
 
 
-        //fillEmptySpots()
+        fillEmptySpots()
 
     } // init
 
@@ -157,8 +157,10 @@ class Puzzle(rows: Int, cols: Int) {
         for (i in puzzle.indices) {
             for (j in puzzle[i].indices) {
                 stringValue.append("${puzzle[i][j]}\t")
+                //print("${i},${j}\t\t")
             }
             stringValue.append('\n')
+            //println()
         }
 
         stringValue.append("\nLook for:\t")

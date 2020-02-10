@@ -61,6 +61,8 @@ class PuzzleSolver(var targetPuzzle: Puzzle, val i: Int) : Thread() {
             }
         }
 
+        println("cool")
+
         return set
 
     }

@@ -44,7 +44,7 @@ class PuzzleSolver(var targetPuzzle: Puzzle, val i: Int) : Thread() {
     }
 
 
-    fun diagonalFinder(): MutableSet<String> {
+    private fun diagonalFinder(): MutableSet<String> {
 
         val set: MutableSet<String> = mutableSetOf()
 

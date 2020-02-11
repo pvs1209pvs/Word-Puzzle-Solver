@@ -1,5 +1,3 @@
-import kotlin.math.max
-
 class PuzzleSolver(var targetPuzzle: Puzzle, val i: Int) : Thread() {
 
     private fun horizontalFinder(): MutableSet<String> {
@@ -44,24 +42,23 @@ class PuzzleSolver(var targetPuzzle: Puzzle, val i: Int) : Thread() {
     }
 
 
-    private fun diagonalFinder(): MutableSet<String> {
+     fun diagonalFinder(): MutableSet<String> {
 
         val set: MutableSet<String> = mutableSetOf()
 
         for (i in targetPuzzle.puzzle.indices) {
-            for (j in targetPuzzle.puzzle[0].indices) {
-
-                var c: String = ""
-
-                for (k in 0 until targetPuzzle.puzzle.size - max(i, j)) {
-                    c += targetPuzzle.puzzle[i + k][j + k]
-                    targetPuzzle.allKeys.forEach { if (c.contains(it) || c.reversed().contains(it)) set += it }
+            var z = 0
+            for (j in i until targetPuzzle.puzzle[i].size-1) {
+                val x = z++
+                val y = j + 1
+                for (k in x until y) {
+                print("${x},${y} ")
                 }
-
+                println()
             }
+            println()
+            println()
         }
-
-        println("cool")
 
         return set
 

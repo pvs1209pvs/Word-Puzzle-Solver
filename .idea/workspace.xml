@@ -2,29 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="024bdf6f-3313-483d-a231-d999b17399c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Graph-Algorithms/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/AdjacencyList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Graph.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Vertex.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sink-Finder/src/demo/SinkFinder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Anagram.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/CountingSort1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/RollingDie.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../KotlinTut/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../KotlinTut/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ASS/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/.idea/C_DS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/graph_array.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/graph_array.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/list_con.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/list_con.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/list_link.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/list_link.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/map_tree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/map_tree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/prio_queue.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/prio_queue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/set_con.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/set_con.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/set_link.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/stack_con.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C_DS/stack_con.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FuckThis/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/COSC_2P13_ASSIGN_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/.idea/libraries/jackson_databind_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaFX/JavaFX.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/AdjacencyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/AdjacencyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/TestKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/TestKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/out/production/Graph-Algorithms/demo/Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/AdjacencyList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/AdjacencyList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Graph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Graph.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Vertex.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph-Algorithms/src/demo/Vertex.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/src/Anagram.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hackerrank/src/CountingSort1.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/src/SinkFinder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sink-Finder/src/demo/SinkFinder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Sink-Finder/src/demo/SinkFinder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle$readKeys$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle$readKeys$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/Puzzle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Puzzle/PuzzleSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Puzzle/PuzzleSolver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Puzzle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Puzzle.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PuzzleSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PuzzleSolver.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/answers" beforeDir="false" afterPath="$PROJECT_DIR$/src/answers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WordPuzzle/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WordPuzzle/src/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WordPuzzle/src/Puzzle.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Anagram.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Anagram.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/CountingSort1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/CountingSort1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/RollingDie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/RollingDie.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../KotlinBasic/src/demo/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KotlinTut/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../KotlinTut/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Pinging/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/.idea/To-Do-List.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/tasks.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/to_do_list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../To-Do-List/to_do_list.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,20 +99,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="84">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1008">
-              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="383">
+              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
             </state>
           </provider>
         </entry>
@@ -59,26 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PuzzleSolver.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/answers">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="999" column="4" selection-start-line="999" selection-start-column="4" selection-end-line="999" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/trash">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="999" column="4" selection-end-line="999" selection-end-column="4" />
+            <state relative-caret-position="1239">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -96,6 +139,11 @@
     <findStrings>
       <find>p</find>
       <find>j</find>
+      <find>exampl</find>
+      <find>ex</find>
+      <find>exam</find>
+      <find>example</find>
+      <find>`</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,17 +153,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/trash" />
-        <option value="$PROJECT_DIR$/src/PuzzleSolver.kt" />
         <option value="$PROJECT_DIR$/src/answers" />
-        <option value="$PROJECT_DIR$/src/Puzzle.kt" />
+        <option value="$PROJECT_DIR$/src/PuzzleSolver.kt" />
         <option value="$PROJECT_DIR$/src/Main.kt" />
+        <option value="$PROJECT_DIR$/src/Puzzle.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="26" />
-    <option name="width" value="960" />
+    <option name="width" value="983" />
     <option name="height" value="1009" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -215,12 +262,15 @@
       <workItem from="1581095840258" duration="42000" />
       <workItem from="1581174196820" duration="12000" />
       <workItem from="1581274257045" duration="1950000" />
-      <workItem from="1581282985713" duration="3352000" />
+      <workItem from="1581282985713" duration="13656000" />
+      <workItem from="1581391622763" duration="12000" />
+      <workItem from="1581433622131" duration="987000" />
+      <workItem from="1581450642818" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19149000" />
+    <option name="totallyTimeSpent" value="30698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,9 +282,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1920" height="1009" extended-state="6" />
+    <frame x="937" y="26" width="983" height="1009" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13247864" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1828877" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -243,7 +294,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.56497175" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946582" visible="true" weight="0.4338983" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -251,57 +302,57 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946582" weight="0.33333334" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3299435" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.5005342" weight="0.37853107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Swing Playground" order="4" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Swing Playground" order="9" weight="0.32941177" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PuzzleSolver.kt">
+    <entry file="file://$PROJECT_DIR$/src/answers">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        <state relative-caret-position="471">
+          <caret line="999" column="4" selection-start-line="999" selection-start-column="4" selection-end-line="999" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/trash">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="999" column="4" selection-end-line="999" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/answers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="999" column="4" selection-start-line="999" selection-start-column="4" selection-end-line="999" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="21">
+          <caret line="730" column="4" lean-forward="true" selection-start-line="730" selection-start-column="4" selection-end-line="730" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PuzzleSolver.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1239">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
         </state>
       </provider>
     </entry>

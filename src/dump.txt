@@ -1,0 +1,171 @@
+   [1]Skip navigation
+
+   [2]jimpix
+
+   (BUTTON) Toggle navigation
+
+     *
+     * [3]Random Word Generator
+     * [4]Big Word List
+     * [5]Random Name Generator
+
+Random Word Generator
+
+   [Category_______________] [Length Limit] [n/a_________] [25_____]
+   [First Letter] [List__________] (BUTTON) Generate Words
+   [ ]  Show Bells and Whistles
+   [ ] Nice Font?
+   [ ] Plural?
+   [ ] Reverse?
+   [ ] Show Original Text?
+   ____________________
+   (*) Anywhere ( ) Start ( ) End
+
+Word Generator
+
+   Sometimes it can be useful to get your hands on a good word generator.
+   For budding authors, poets and lovers of words (logophiles).
+
+   There are 29,243 words to choose from, ranging from 1 to 16 characters
+   long.
+
+   The tool lets you generate up to 100 random words at a time. You can
+   also make words plural, reverse them, and if you're a fan of bold words
+   against a pretty background, click the "nice font" option.
+
+   The words can be chosen at random from our big list, or you can select
+   a specific category to refine the results.
+
+   Additionally, there is the option to type in some text in the field at
+   the end of the form, so that e.g. you can get a list of words which
+   include "ing".
+
+Random word examples
+
+   philips upstage squint spiker flick mixcloud morose stoop detention
+   aground south embed suds overboard guidance expletive blacky back hazy
+   flounder stroller harvest dive file fragile fall clare lazarus
+   satellite sheba vegetable gregsbury coffee vergence duct murderous
+   grimacing montgomery socks samurai vitality princess drip temple yodel
+   leukocyte consider caldy poke clerical
+
+Main Options
+
+Category
+
+   The default option is to select your random word from any category.
+   However, you can use the drop down list to choose from various
+   categories such as food, sports, emotions etc.
+
+Length Limit
+
+   If you're looking for a word with a certain number of characters, the
+   2nd menu option lets you specify the length. If you e.g. choose 6, then
+   words up to 6 characters long will be chosen, unless you choose "Exact"
+   in the 3rd drop down, in which case only words exactly 6 characters
+   long will be returned.
+
+Length Match
+
+   If you have selected a length limit, choose whether the output is up to
+   an including that length limit, or exactly that number of characters
+   long.
+
+Number Of Words
+
+   The 4th drop down option lets you choose the number of words to
+   generate. 25 are returned by default, but you can choose between 1 and
+   100 words.
+
+Start Letter
+
+   Choose which letter you want your words to start with, using the 5th
+   drop down menu.
+
+Colourful Tick Box Options
+
+Nice Font
+
+   Tick to get your words in a nice white font on a colourful background.
+
+Plural
+
+   Sticks an "s" at the end of each word
+
+Reverse
+
+   Reverses each word, and optionally lets you include the original word.
+
+Filter Text
+
+   Use the "Includes This Text" input field to only return words
+   containing the text you want.
+
+   Have fun!
+
+   (BUTTON) ×
+
+Sort Data
+
+   (BUTTON) (BUTTON) (BUTTON) (BUTTON) (BUTTON)
+
+   (BUTTON) Close
+     __________________________________________________________________
+
+     * © jimpix ecards 2020
+     *
+     * [6]About
+     * [7]FAQ
+     * [8]Contact
+     * [9]Help
+     * [10]Privacy Policy
+     * [11]Site Updates
+
+     * Other Stuff
+     *
+     * [12]Username Generator
+     * [13]Passphrase Generator
+     * [14]Random Word Generator
+     * [15]Random Name Generator
+     * [16]Clump Of Chuckles Cartoons
+     * [17]Spoonerisms
+
+     * Social Media Usernames
+     *
+     * [18]Facebook Names
+     * [19]Instagram Names
+     * [20]Snapchat Names
+     * [21]Tumblr Names
+     * [22]Twitter Names
+     * [23]Youtube Names
+
+References
+
+   Visible links
+   1. https://jimpix.co.uk/generators/word-generator.asp#content
+   2. https://jimpix.co.uk/
+   3. https://jimpix.co.uk/generators/word-generator.asp
+   4. https://jimpix.co.uk/generators/word-list.asp
+   5. https://jimpix.co.uk/generators/name-generator.asp
+   6. https://jimpix.co.uk/about.asp
+   7. https://jimpix.co.uk/faq.asp
+   8. https://jimpix.co.uk/contact/
+   9. https://jimpix.co.uk/ecards/user-help.asp
+  10. https://jimpix.co.uk/privacy.asp
+  11. https://jimpix.co.uk/updates.asp
+  12. https://jimpix.co.uk/words/username-generator.asp
+  13. https://jimpix.co.uk/words/username-experiments.asp?version=passphrase
+  14. https://jimpix.co.uk/generators/word-generator.asp
+  15. https://jimpix.co.uk/generators/name-generator.asp
+  16. https://jimpix.co.uk/clump-of-chuckles
+  17. https://jimpix.co.uk/spoonerisms
+  18. https://jimpix.co.uk/words/names-facebook.asp
+  19. https://jimpix.co.uk/words/names-instagram.asp
+  20. https://jimpix.co.uk/words/names-snapchat.asp
+  21. https://jimpix.co.uk/words/names-tumblr.asp
+  22. https://jimpix.co.uk/words/names-twitter.asp
+  23. https://jimpix.co.uk/words/names-youtube.asp
+
+   Hidden links:
+  25. https://jimpix.co.uk/words/usernames-home.asp
+  26. https://jimpix.co.uk/generators/word-generator.asp

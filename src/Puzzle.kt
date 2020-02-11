@@ -1,4 +1,9 @@
+import com.sun.xml.internal.fastinfoset.util.StringArray
+import java.io.BufferedReader
 import java.io.File
+import java.io.InputStreamReader
+import java.io.RandomAccessFile
+import java.util.concurrent.TimeUnit
 
 
 class Puzzle(rows: Int, cols: Int) {
@@ -14,7 +19,9 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle += puzzleRow
         }
 
-        allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
+        // allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
+
+        allKeys = newRead("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
 
 
         fillEmptySpots()
@@ -27,7 +34,7 @@ class Puzzle(rows: Int, cols: Int) {
     private fun addKeys(key: String, ornt: Int, reversed: Boolean): String? {
 
         if (puzzle[0].size < key.length) {
-            println("key length ${key.length} > column length ${puzzle[0].size}")
+            //println("key length ${key.length} > column length ${puzzle[0].size}")
             return null
         }
 
@@ -115,18 +122,42 @@ class Puzzle(rows: Int, cols: Int) {
     }
 
 
-    private fun readKeys(fileName: String): Array<String> {
+    private fun newRead(fileName: String): Array<String> {
+
+        fetchWordsFromWeb()
+
 
         var keys: Array<String> = arrayOf()
 
-        File(fileName).forEachLine {
-            val key = (addKeys(it, (0..2).random(), (0..1).random() == 1))
-            if (key != null) keys += it
+        val raFile = RandomAccessFile(fileName, "r")
+        raFile.seek(1241)
+
+        var reader = ""
+        var seek: Int
+
+        seek = raFile.read()
+        reader += seek.toChar()
+
+        while (!reader.contains("Main")) {
+
+            if (seek == 32) {
+                reader = reader.trim()
+                if (reader.isNotEmpty()) {
+                    val key = addKeys(reader, (0..2).random(), (0..1).random() == 1)
+                    if (key != null) keys += reader
+                }
+                reader = ""
+            }
+
+            seek = raFile.read()
+            reader += seek.toChar()
+
         }
 
         return keys
 
     }
+
 
     /*
     Checks if there is an empty spot at the provided index.
@@ -157,7 +188,7 @@ class Puzzle(rows: Int, cols: Int) {
         for (i in puzzle.indices) {
             for (j in puzzle[i].indices) {
                 stringValue.append("${puzzle[i][j]}\t")
-                //print("${i},${j}\t\t")
+                // print("${i},${j}\t\t")
             }
             stringValue.append('\n')
             //println()
@@ -171,5 +202,21 @@ class Puzzle(rows: Int, cols: Int) {
         return stringValue.toString()
 
     }
+
+    private fun fetchWordsFromWeb() {
+
+        val process = ProcessBuilder("bash", "-c", "lynx -dump https://jimpix.co.uk/generators/word-generator.asp > /home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
+        process.redirectErrorStream(true)
+        val p: Process= process.start()
+        val ret:Int = p.waitFor()
+        p.inputStream.reader(Charsets.UTF_8).use {
+            println(it.readText())
+        }
+
+       p.destroy()
+
+    }
+
+
 
 }

@@ -21,7 +21,7 @@ class Puzzle(rows: Int, cols: Int) {
 
         // allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
 
-        allKeys = newRead("/home/param/Desktop/dump.txt")
+        allKeys = newRead("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
 
 
         fillEmptySpots()
@@ -122,18 +122,42 @@ class Puzzle(rows: Int, cols: Int) {
     }
 
 
-    private fun readKeys(fileName: String): Array<String> {
+    private fun newRead(fileName: String): Array<String> {
+
+        fetchWordsFromWeb()
+
 
         var keys: Array<String> = arrayOf()
 
-        File(fileName).forEachLine {
-            val key = (addKeys(it, (0..2).random(), (0..1).random() == 1))
-            if (key != null) keys += it
+        val raFile = RandomAccessFile(fileName, "r")
+        raFile.seek(1241)
+
+        var reader = ""
+        var seek: Int
+
+        seek = raFile.read()
+        reader += seek.toChar()
+
+        while (!reader.contains("Main")) {
+
+            if (seek == 32) {
+                reader = reader.trim()
+                if (reader.isNotEmpty()) {
+                    val key = addKeys(reader, (0..2).random(), (0..1).random() == 1)
+                    if (key != null) keys += reader
+                }
+                reader = ""
+            }
+
+            seek = raFile.read()
+            reader += seek.toChar()
+
         }
 
         return keys
 
     }
+
 
     /*
     Checks if there is an empty spot at the provided index.
@@ -191,45 +215,8 @@ class Puzzle(rows: Int, cols: Int) {
 
        p.destroy()
 
-
-
-
     }
 
-    private fun newRead(fileName: String): Array<String> {
 
-        fetchWordsFromWeb()
-
-
-        var keys: Array<String> = arrayOf()
-
-        val raFile = RandomAccessFile(fileName, "r")
-        raFile.seek(1241)
-
-        var reader = ""
-        var seek: Int
-
-        seek = raFile.read()
-        reader += seek.toChar()
-
-        while (!reader.contains("Main")) {
-
-            if (seek == 32) {
-                reader = reader.trim()
-                if (reader.isNotEmpty()) {
-                    val key = addKeys(reader, (0..2).random(), (0..1).random() == 1)
-                    if (key != null) keys += reader
-                }
-                reader = ""
-            }
-
-            seek = raFile.read()
-            reader += seek.toChar()
-
-        }
-
-        return keys
-
-    }
 
 }

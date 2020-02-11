@@ -112,8 +112,15 @@
         <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
-              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+              <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dump.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2862" />
           </provider>
         </entry>
       </file>
@@ -161,8 +168,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
     <option name="y" value="26" />
-    <option name="width" value="983" />
+    <option name="width" value="960" />
     <option name="height" value="1009" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -265,12 +273,12 @@
       <workItem from="1581282985713" duration="13656000" />
       <workItem from="1581391622763" duration="12000" />
       <workItem from="1581433622131" duration="987000" />
-      <workItem from="1581450642818" duration="246000" />
+      <workItem from="1581450642818" duration="545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30698000" />
+    <option name="totallyTimeSpent" value="30997000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,10 +290,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="937" y="26" width="983" height="1009" extended-state="4" />
-    <editor active="true" />
+    <frame x="0" y="26" width="1920" height="1009" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1828877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09134615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -293,8 +300,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946582" visible="true" weight="0.4338983" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299435" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946582" weight="0.4338983" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,7 +309,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946582" weight="0.33333334" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946582" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.5005342" weight="0.37853107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -349,10 +356,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dump.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2862" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Puzzle.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
-          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+          <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
         </state>
       </provider>
     </entry>

@@ -1,9 +1,4 @@
-import com.sun.xml.internal.fastinfoset.util.StringArray
-import java.io.BufferedReader
-import java.io.File
-import java.io.InputStreamReader
 import java.io.RandomAccessFile
-import java.util.concurrent.TimeUnit
 
 
 class Puzzle(rows: Int, cols: Int) {
@@ -19,42 +14,36 @@ class Puzzle(rows: Int, cols: Int) {
             puzzle += puzzleRow
         }
 
-        // allKeys = readKeys("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/answers")
-
-        allKeys = newRead("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
-
+        allKeys = readKeysFromFile("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
 
         fillEmptySpots()
 
-    } // init
+    }
 
-    /*
-    ornt: 0 is vertical 1 is horizontal 2 is diagonally
+
+    /**
+     * @param key word that goes in the puzzle.
+     * @param ornt in what orientation is the word added. 0 for horizonal, 1 for verticla and 2 for diagonal.
+     * @param reversed if the word has to added in reverse.
+     * @return the key that on successful addition else null.
      */
     private fun addKeys(key: String, ornt: Int, reversed: Boolean): String? {
 
-        if (puzzle[0].size < key.length) {
-            //println("key length ${key.length} > column length ${puzzle[0].size}")
-            return null
-        }
+        if (puzzle[0].size < key.length) return null
 
-        if (ornt == 0) {
-            return fillVerticallyWithKey(if (reversed) key.reversed() else key)
-        } else if (ornt == 1) {
-            return fillHorizontallyWithKey(if (reversed) key.reversed() else key)
-        } else if (ornt == 2) {
-            return fillDiagonallyWithKey(if (reversed) key.reversed() else key)
-        }
+        if (ornt == 0) return fillVerticallyWithKey(if (reversed) key.reversed() else key)
+        else if (ornt == 1) return fillHorizontallyWithKey(if (reversed) key.reversed() else key)
+        else if (ornt == 2) return fillDiagonallyWithKey(if (reversed) key.reversed() else key)
 
         return null
 
+    }
 
-    } // addKeys
 
-
-    /*
-    Adds words vertically into the puzzle.
-    Returns the words if it could be successfully added else null.
+    /**
+     * Generates a random row and column number where the key needs to added vertically.
+     * @param key the word that needs to be added to the puzzle.
+     * @return the key upon successful addition and null on a failed addition.
      */
     private fun fillVerticallyWithKey(key: String): String? {
 
@@ -74,10 +63,11 @@ class Puzzle(rows: Int, cols: Int) {
         return key
     }
 
-    /*
-   Adds words horizontally into the puzzle.
-   Returns the words if it could be successfully added else null.
-    */
+    /**
+     * Generates a random row and column number where the key needs to added horizontally.
+     * @param key the word that needs to be added to the puzzle.
+     * @return the key upon successful addition and null on a failed addition.
+     */
     private fun fillHorizontallyWithKey(key: String): String? {
 
         val r = (puzzle.indices).random()
@@ -98,10 +88,11 @@ class Puzzle(rows: Int, cols: Int) {
 
     }
 
-    /*
-   Adds words diagonally into the puzzle.
-   Returns the words if it could be successfully added else null.
-    */
+    /**
+     * Generates a random row and column number where the key needs to added diagonally.
+     * @param key the word that needs to be added to the puzzle.
+     * @return the key upon successful addition and null on a failed addition.
+     */
     private fun fillDiagonallyWithKey(key: String): String? {
 
         val r = (0..puzzle.size - key.length).random()
@@ -122,10 +113,13 @@ class Puzzle(rows: Int, cols: Int) {
     }
 
 
-    private fun newRead(fileName: String): Array<String> {
+    /**
+     * @param fileName path of the file containing the randomly generated words.
+     * @return Array of words that were added to the puzzle.
+     */
+    private fun readKeysFromFile(fileName: String): Array<String> {
 
         fetchWordsFromWeb()
-
 
         var keys: Array<String> = arrayOf()
 
@@ -159,17 +153,19 @@ class Puzzle(rows: Int, cols: Int) {
     }
 
 
-    /*
-    Checks if there is an empty spot at the provided index.
-    Returns true if the spot is empty else false.
+    /**
+     * Checks if there is an empty spot at the provided indices.
+     * @param r row number.
+     * @param c column number.
+     * @return true if there is an empty stop at r,c.
      */
     private fun isEmptyTile(r: Int, c: Int): Boolean {
         return puzzle[r][c] == '.'
     }
 
 
-    /*
-    Fills empty spots will random english alphabets.
+    /**
+     * Adds random english alphabets at empty indices.
      */
     private fun fillEmptySpots() {
         for (i in puzzle.indices) {
@@ -181,6 +177,27 @@ class Puzzle(rows: Int, cols: Int) {
         }
     }
 
+    /**
+     * Dumps https://jimpix.co.uk/generators/word-generator.asp to the file.
+     */
+    private fun fetchWordsFromWeb() {
+
+        val process = ProcessBuilder(
+            "bash",
+            "-c",
+            "lynx -dump https://jimpix.co.uk/generators/word-generator.asp > /home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt"
+        )
+        process.redirectErrorStream(true)
+        val p: Process = process.start()
+        val ret: Int = p.waitFor()
+        p.inputStream.reader(Charsets.UTF_8).use {
+            println(it.readText())
+        }
+
+        p.destroy()
+
+    }
+
     override fun toString(): String {
 
         val stringValue: StringBuilder = StringBuilder()
@@ -188,13 +205,12 @@ class Puzzle(rows: Int, cols: Int) {
         for (i in puzzle.indices) {
             for (j in puzzle[i].indices) {
                 stringValue.append("${puzzle[i][j]}\t")
-                // print("${i},${j}\t\t")
             }
             stringValue.append('\n')
-            //println()
         }
 
         stringValue.append("\nLook for:\t")
+
         allKeys.forEach { stringValue.append("$it ") }
 
         stringValue.append("\n")
@@ -202,21 +218,6 @@ class Puzzle(rows: Int, cols: Int) {
         return stringValue.toString()
 
     }
-
-    private fun fetchWordsFromWeb() {
-
-        val process = ProcessBuilder("bash", "-c", "lynx -dump https://jimpix.co.uk/generators/word-generator.asp > /home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
-        process.redirectErrorStream(true)
-        val p: Process= process.start()
-        val ret:Int = p.waitFor()
-        p.inputStream.reader(Charsets.UTF_8).use {
-            println(it.readText())
-        }
-
-       p.destroy()
-
-    }
-
 
 
 }

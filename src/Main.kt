@@ -4,9 +4,9 @@ fun main(){
 
 
 
-    val puzzle = Puzzle(5,5)
+    val p = Puzzle(250,250)
 
-    println(puzzle)
+    println(p)
 
 //    val aPS = PuzzleSolver(puzzle, 0)
 //    val bPS = PuzzleSolver(puzzle, 1)

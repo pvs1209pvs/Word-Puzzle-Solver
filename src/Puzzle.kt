@@ -1,21 +1,16 @@
 import java.io.RandomAccessFile
 
-
 class Puzzle(rows: Int, cols: Int) {
 
-    var puzzle: Array<CharArray> = arrayOf()
+    var puzzle: Array<CharArray> = Array(rows) { CharArray(cols) { '.' } }
     var allKeys: Array<String> = arrayOf()
 
     init {
 
-        for (i in 0 until rows) {
-            val puzzleRow = CharArray(cols)
-            puzzleRow.fill('.')
-            puzzle += puzzleRow
+        println("Loading....")
+        for (i in 0 until 10) {
+            allKeys += readKeysFromFile("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
         }
-
-        allKeys = readKeysFromFile("/home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt")
-
         fillEmptySpots()
 
     }
@@ -31,11 +26,12 @@ class Puzzle(rows: Int, cols: Int) {
 
         if (puzzle[0].size < key.length) return null
 
-        if (ornt == 0) return fillVerticallyWithKey(if (reversed) key.reversed() else key)
-        else if (ornt == 1) return fillHorizontallyWithKey(if (reversed) key.reversed() else key)
-        else if (ornt == 2) return fillDiagonallyWithKey(if (reversed) key.reversed() else key)
-
-        return null
+        return when (ornt) {
+            0 -> fillVerticallyWithKey(if (reversed) key.reversed() else key)
+            1 -> fillHorizontallyWithKey(if (reversed) key.reversed() else key)
+            2 -> fillDiagonallyWithKey(if (reversed) key.reversed() else key)
+            else -> null
+        }
 
     }
 
@@ -82,7 +78,6 @@ class Puzzle(rows: Int, cols: Int) {
         for (i in key.indices) {
             puzzle[r][c + i] = key[i]
         }
-
 
         return key
 
@@ -138,7 +133,7 @@ class Puzzle(rows: Int, cols: Int) {
                 reader = reader.trim()
                 if (reader.isNotEmpty()) {
                     val key = addKeys(reader, (0..2).random(), (0..1).random() == 1)
-                    if (key != null) keys += reader
+                    if (key != null && key.length > 3) keys += reader
                 }
                 reader = ""
             }
@@ -168,6 +163,7 @@ class Puzzle(rows: Int, cols: Int) {
      * Adds random english alphabets at empty indices.
      */
     private fun fillEmptySpots() {
+
         for (i in puzzle.indices) {
             for (j in puzzle[i].indices) {
                 if (isEmptyTile(i, j)) {
@@ -175,6 +171,7 @@ class Puzzle(rows: Int, cols: Int) {
                 }
             }
         }
+
     }
 
     /**
@@ -188,15 +185,16 @@ class Puzzle(rows: Int, cols: Int) {
             "lynx -dump https://jimpix.co.uk/generators/word-generator.asp > /home/param/Desktop/Kotlin-Projects/Word-Puzzle/src/dump.txt"
         )
         process.redirectErrorStream(true)
+
         val p: Process = process.start()
-        val ret: Int = p.waitFor()
         p.inputStream.reader(Charsets.UTF_8).use {
-            println(it.readText())
+           // println(it.readText())
         }
 
         p.destroy()
 
     }
+
 
     override fun toString(): String {
 
@@ -209,7 +207,7 @@ class Puzzle(rows: Int, cols: Int) {
             stringValue.append('\n')
         }
 
-        stringValue.append("\nLook for:\t")
+        stringValue.append("\nLook for ${allKeys.size} words:  ")
 
         allKeys.forEach { stringValue.append("$it ") }
 
